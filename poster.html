@@ -1,104 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Using Cultural Capital to maximise student potential: A guide for Personal Tutors</title>
-    <link rel="stylesheet" href="poster.css">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>
+      Using Cultural Capital to maximise student potential: A guide for Personal
+      Tutors
+    </title>
+    <link rel="stylesheet" href="poster.css" />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1"
+    />
     <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
 
-          <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-          <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-    
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+
     <style type="text/css">
-  html { font-size: 1.15rem }
-</style>
+      html {
+        font-size: 1.15rem;
+      }
+    </style>
   </head>
 
   <body vocab="http://schema.org/" typeof="ScholarlyArticle">
     <header role="banner">
       <aside>
-          <a href="www.google.co.uk"><img src="logo.png" alt="University logo"></a>
+        <a href="https://www.city.ac.uk"
+          ><img
+            style="background: white"
+            src="logo.png"
+            alt="City St George's Logo"
+        /></a>
       </aside>
       <div>
-        <h1 property="headline">Using Cultural Capital to maximise student potential: A guide for Personal Tutors</h1>
-                  <h2 property="alternativeHeadline">EDM118 2025</h2>
-                <address>
-              <a property="author">Benjamin Evans<sup>1</sup>, Naba Elsaid<sup>1</sup>, Roma Ivanauskaite<sup>1</sup>, Fred Scott<sup>1</sup>, Paul Sutton Reeves<sup>1</sup></a>
-<br />  <sup>1</sup><a property="sourceOrganization">City St George's, University of London</a>
+        <h1 property="headline">
+          Using Cultural Capital to maximise student potential: A guide for
+          Personal Tutors
+        </h1>
+        <h2 property="alternativeHeadline">EDM118 2025</h2>
+        <address>
+          <a property="author"
+            >Benjamin Evans<sup>1</sup>, Naba Elsaid<sup>1</sup>, Roma
+            Ivanauskaite<sup>1</sup>, Fred Scott<sup>1</sup>, Paul Sutton
+            Reeves<sup>1</sup></a
+          >
+          <br />
+          <sup>1</sup
+          ><a property="sourceOrganization"
+            >City St George's, University of London</a
+          >
         </address>
         <span class="publication-info">
-                      <span property="publisher">Unpublished</span>,
-            <time pubdate property="datePublished" datetime="2025-02-12">February 12, 2025</time>
-                  </span>
+          <span property="publisher">Unpublished</span>,
+          <time pubdate property="datePublished" datetime="2025-02-12"
+            >February 12, 2025</time
+          >
+        </span>
       </div>
       <aside>
-          <a href="https://www.city.ac.uk"><img style="background: white" src="logo.png" alt="City St George's Logo"></a>
+        <h3>External Links</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://careershub.city.ac.uk/" target="_blank"
+                >Careers and employability support</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.city.ac.uk/prospective-students/student-life/student-wellbeing"
+                target="_blank"
+                >Student wellbeing support</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://studenthub.city.ac.uk/careers-and-employability/professional-mentoring"
+                target="_blank"
+                >Professional Mentoring programme</a
+              >
+            </li>
+            <li>
+              <a href="https://buddy.city.ac.uk/apply/" target="_blank"
+                >City Buddies, peer mentoring for first year students</a
+              >
+            </li>
+            <li>
+              <a href="https://volunteering.city.ac.uk/" target="_blank"
+                >Volunteering opportunities</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.city.ac.uk/prospective-students/student-life/lgbtqplus"
+                target="_blank"
+                >LGBTQ+ Societies</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.city.ac.uk/prospective-students/student-life/sports"
+                target="_blank"
+                >Sports groups and programmes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.city.ac.uk/prospective-students/student-life/social"
+                target="_blank"
+                >Social activities and groups</a
+              >
+            </li>
+          </ul>
+        </nav>
       </aside>
     </header>
 
     <main property="articleBody">
-      <section>
-        <header><h3>Abstract</h3></header>
-      
-        <p>Academic posters are usually designed using presentation software and distributed as images or PDFs.</p>
-      
-        <p>While PDFs are fine for printing posters, they are not particularly user-friendly: they are hard to read on small screens, don't support resizing text or increasing contrast, and often don't work nicely with screen readers.</p>
-      
-        <p>The recent shift to online conferences is a great opportunity to reconsider our poster-making tools, and it turns out that plain HTML5 + CSS works pretty well for making (more) accessible posters.</p>
-      
-        <p>This template is released under a permissive license: all we ask if you use it for your own posters is that you leave a one-line comment in the HTML sources.</p>
-        <p>Academic posters are usually designed using presentation software and distributed as images or PDFs.</p>
-      
-        <p>While PDFs are fine for printing posters, they are not particularly user-friendly: they are hard to read on small screens, don't support resizing text or increasing contrast, and often don't work nicely with screen readers.</p>
-      
-        <p>The recent shift to online conferences is a great opportunity to reconsider our poster-making tools, and it turns out that plain HTML5 + CSS works pretty well for making (more) accessible posters.</p>
-      
-        <p>This template is released under a permissive license: all we ask if you use it for your own posters is that you leave a one-line comment in the HTML sources.</p>
+      <section class="custom-section">
+        <header><h3>1. What is Cultural Capital?</h3></header>
+
+        <p class="centered">
+          'Non-financial social assets that promote social mobility beyond
+          economic means' - Bourdieu & Davies, S., & Rizk, J. (2018)
+        </p>
+
+        <p>
+          This encompasses knowledge, skills, education, and any advantages a
+          person has that give them a higher status in society.
+        </p>
+
+        <div style="align-self: start">
+          <p>1. Embodied</p>
+          <!-- <p>Academic language and confidence</p> -->
+          <ul>
+            <li>Academic language</li>
+            <li>Confidence</li>
+          </ul>
+        </div>
+        <div style="align-self: start">
+          <p>2. Institutionalised</p>
+          <!-- <p>Institutional reputation and professional accreditation</p> -->
+          <ul>
+            <li>Institutional reputation</li>
+            <li>Professional accreditation</li>
+          </ul>
+        </div>
+        <div style="align-self: start">
+          <p>3. Objectified</p>
+          <!-- Technology & Equipment, Luxury goods -->
+          <ul>
+            <li>Technology & Equipment</li>
+            <li>Luxury goods</li>
+          </ul>
+        </div>
+
+        <p>
+          <!-- <ul> -->
+          <!-- <li> -->
+          Educational attainment and a range of factors in areas of social
+          deprivation are highly correlated: local economic activity rate,
+          percentage of the population claiming benefits and/or in social
+          housing, health scores, teenage pregnancy rates, etc. (Smith, 2012)
+          <!-- </li> -->
+          <!-- </ul> -->
+        </p>
+      </section>
+      <section class="custom-section">
+        <header><h3>2. Relevance for individuals and institutions</h3></header>
+        <p>
+          Many students from disadvantaged backgrounds lack the knowledge and
+          ability that students from relatively advantaged backgrounds possess,
+          facilitating success at university and allowing for the further
+          accumulation of cultural capital while experiencing HE—first
+          characterised as cultural capital by Bourdieu (1979).
+        </p>
+
+        <p>
+          More of an issue in the context of modern higher education due to
+          widening participation and an increase in the number of
+          'Non-traditional' students from areas with historically low
+          participation rates.
+        </p>
+
+        <p>
+          Deficits of cultural capital may affect young people applying to
+          university in the first place, which institutions they apply to, and
+          what they understand before beginning.
+        </p>
+
+        <p>
+          Social disadvantage may impact behaviour, attendance, and course
+          completion. Low attainment is linked to social disadvantage.
+        </p>
+
+        <p>
+          Universities are obliged to ensure students are not disadvantaged and
+          must implement an
+          <strong>Office for Students' Access and Participation Plan</strong> if
+          they charge the highest-level tuition fees.
+        </p>
+
+        <p>
+          Teachers who understand diverse backgrounds are more likely to 'create
+          learning environments and teaching strategies' that suit all.
+          (Hockings et al. (2007))
+        </p>
       </section>
 
-      <section>
-        <header><h3>Abstract 2</h3></header>
-      
-        <p>Academic posters are usually designed using presentation software and distributed as images or PDFs.</p>
-      
-        <p>While PDFs are fine for printing posters, they are not particularly user-friendly: they are hard to read on small screens, don't support resizing text or increasing contrast, and often don't work nicely with screen readers.</p>
-      
-        <p>The recent shift to online conferences is a great opportunity to reconsider our poster-making tools, and it turns out that plain HTML5 + CSS works pretty well for making (more) accessible posters.</p>
-      
-        <p>This template is released under a permissive license: all we ask if you use it for your own posters is that you leave a one-line comment in the HTML sources.</p>
-        <p>Academic posters are usually designed using presentation software and distributed as images or PDFs.</p>
-      
-        <p>While PDFs are fine for printing posters, they are not particularly user-friendly: they are hard to read on small screens, don't support resizing text or increasing contrast, and often don't work nicely with screen readers.</p>
-      
-        <p>The recent shift to online conferences is a great opportunity to reconsider our poster-making tools, and it turns out that plain HTML5 + CSS works pretty well for making (more) accessible posters.</p>
-      
-        <p>This template is released under a permissive license: all we ask if you use it for your own posters is that you leave a one-line comment in the HTML sources.</p>
+      <section class="custom-section">
+        <header><h3>Risk Factors for Course Failure or Withdrawal</h3></header>
+        <p>
+          Lochtie et al (2019) categorise a series of risk factors, the
+          interplay between which may place a student at risk of course failure
+          or withdrawal:
+        </p>
+
+        <ol>
+          <li>
+            <strong>Student characteristics:</strong> a history of
+            alcohol/substance abuse, disability, mental health, part-time,
+            mature, previous offender
+          </li>
+          <li>
+            <strong>Home life:</strong> abusive relationships, care leaver,
+            homelessness, pregnant/parent, commuter/lives with parent
+          </li>
+          <li>
+            <strong>Cultural/economic factors:</strong> socioeconomic groups
+            D/E, ethnic minority, asylum seeker, international
+          </li>
+        </ol>
       </section>
 
-  <article>
-    <header><h3>Using this template</h3></header>
-    <p>There are two ways to use this template: directly editing the HTML, and using Jinja2 templates.</p>
-  </article>
+      <section class="custom-section">
+        <header><h3>3. Why personal tutors?</h3></header>
+        <p>
+          <strong>Direct Student Interaction:</strong> Personal tutors have
+          regular contact with students, allowing them to build meaningful
+          relationships and provide tailored guidance.
+        </p>
+        <p>
+          <strong>Holistic Understanding:</strong> Their role enables them to
+          see the broader picture of a student's academic and personal
+          challenges, ensuring a well-rounded support system.
+        </p>
+        <p>
+          <strong>Trust and Approachability:</strong> Through sustained
+          interactions, tutors can develop trust, making students more likely to
+          seek help when needed (Fukuyama, 1995; Putnam, 2000).
+        </p>
+        <p>
+          <strong>Institutional Knowledge:</strong> Tutors understand university
+          structures and services, making them well-equipped to signpost
+          students to relevant resources and support networks (Simon et al.,
+          2021).
+        </p>
+        <p>
+          <strong>Academic and Non-Cognitive Skill Development:</strong> They
+          can provide structured guidance on study strategies, time management,
+          and professional networking, enhancing students' long-term success
+          (Dweck et al., 2014; Farrington et al., 2012; Luthar et al., 2015).
+        </p>
+      </section>
 
-  <article>
-    <header><h3>Editing the HTML directly</h3></header>
+      <section class="custom-section">
+        <header>
+          <h3>
+            4. What should I do? Where does my responsibility start and end as a
+            personal tutor? Advice & dos and don'ts for personal tutors
+            (metacognition?)
+          </h3>
+        </header>
+        <img
+          src="dosanddonts.svg"
+          alt="Dos and don'ts for personal tutors"
+          style="max-width: 100%; height: auto"
+        />
+      </section>
 
-    <p>This is the simplest way to get started, since it just requires a text editor:</p>
+      <section class="custom-section">
+        <header><h3>Evidence base?</h3></header>
+        <p>
+          Key findings from a study by Hockings et al (2007) into the experience
+          of non-traditional students:
+        </p>
 
-    <ol>
-      <li>Download the <a href="https://github.com/cpitclaudel/academic-poster-template/releases/latest">latest release</a> of this template (or download the <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/tutorial/poster.html">webpage</a> and the corresponding <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/poster.css">stylesheet</a> directly from the <a href="https://github.com/cpitclaudel/academic-poster-template/tree/main/docs/tutorial/">repository</a>).</li>
-      <li>Adjust the metadata and add blocks to the <code>main</code> section.</li>
-    </ol>
-  </article>
+        <ol>
+          <li>
+            A tendency to work while at university to support themselves
+            independently and ramifications of this.
+          </li>
+          <li>
+            Sometimes experience difficulty in mixing socially, which results in
+            social isolation and can impact 'confidence and commitment to their
+            course' - social skills are required to navigate this.
+          </li>
+          <li>
+            Establishing a different identity from family background was seen as
+            an aspiration for some but tended to alienate former peers.
+          </li>
+          <li>
+            Expected fair treatment, not to be patronised, while recognising
+            that differential treatment might be meeting individual needs rather
+            than singling out.
+          </li>
+        </ol>
+      </section>
+      <section class="custom-section">
+        <header>
+          <h3>
+            5. Evidence supporting the importance of cultural capital in student
+            success
+          </h3>
+        </header>
+        <ul>
+          <li>
+            <a
+              href="https://www.culturallearningalliance.org.uk/what-is-cultural-capital/"
+              >Bourdieu - Understanding perception and response to social
+              environment</a
+            >
+          </li>
+          <li>
+            Sam Cairns (2019) <em>What is Cultural Capital?</em>
+            <a
+              href="https://www.culturallearningalliance.org.uk/what-is-cultural-capital/"
+              >culturallearningalliance.org.uk</a
+            >
+          </li>
+          <li>
+            The influence of habitus in the relationship between cultural
+            capital and academic achievement in the context of disadvantaged
+            youth. <br />
+            S. Michael Gaddis (2012) <em>Social Science Research</em> Elsevier
+          </li>
+          <li>
+            Understanding a student's background in regard to Cultural Capital
+            and its effects on education outcomes. <br />
+            Lucia Tramonte, J. Douglas Willms (2009)
+            <em>Economics of Education Review</em> Elsevier
+          </li>
+          <li>
+            Cultural capital in educational research: A critical assessment of
+            research conducted since 2003. <br />
+            ANNETTE LAREAU and ELLIOT B. WEININGER (2003)
+            <em>Theory and Society 32</em> Kluwer Academic Publishers
+          </li>
+        </ul>
+      </section>
 
+      <section class="custom-section">
+        <header>
+          <h3>References</h3>
+        </header>
+        <div style="font-size: 0.8em">
+          <ul>
+            <li>
+              Bourdieu, Pierre (1979), ‘Distinction: A Social Critique of the
+              Judgment of Taste’, translated by R. Nice, 1984, Cambridge MA:
+              Harvard University Press
+            </li>
+            <li>
+              Bourdieu, P., 2018. The forms of capital. In The sociology of
+              economic life (pp. 78-92). Routledge.
+            </li>
+            <li>
+              Xu Yongjian and Xu Liqun (2015), ‘Cultural Capital Theory and
+              College Students’ Cultural Competitiveness', International
+              Conference on Mechanical Science and Engineering
+            </li>
+            <li>
+              Christine Hockings, Sandra Cooke & Marion Bowl (2007), ‘Academic
+              engagement’ within a widening participation context—a 3D analysis,
+              Teaching in Higher Education, 12:5-6, 721-733
+            </li>
+            <li>
+              Czerniewicz, L. and Brown, C., 2011. Objectified cultural capital
+              and the tale of two students. In Exploring the theory, pedagogy
+              and practice of networked learning (pp. 209-219). New York, NY:
+              Springer New York.
+            </li>
+            <li>
+              Dave Lochtie, Emily McIntosh, Andrew Stork and Ben W Walker
+              (2019), ‘Effective Personal Tutoring in Higher Education’, St
+              Alban’s: Critical Publishing
+            </li>
+            <li>
+              Davies, S., & Rizk, J. (2018). The Three Generations of Cultural
+              Capital Research: A Narrative Review. Review of Educational
+              Research, 88(3), 331–365.
+              <a href="http://www.jstor.org/stable/45217766">Link</a>
+            </li>
+            <li>
+              Emma Smith (2012), ‘Key Issues in Education and Social Justice’,
+              Thousand Oaks: SAGE
+            </li>
+            <li>
+              Fukuyama, F. (1995). Trust: The social values and the creation of
+              prosperity. Free Press.
+            </li>
+            <li>
+              Griffiths, K. (2005). Personal coaching: A model for effective
+              learning. Journal of Learning Design, 1(2), pp. 55-65.
+            </li>
+            <li>
+              Higher Education Academy (HEA) (2013). Personal tutoring and key
+              skills development in higher education – experiences and
+              challenges. Available at:
+              <a
+                href="https://s3.eu-west-2.amazonaws.com/assets.creode.advancehe-document-manager/documents/hea/private/gen_056_0_1568037085.pdf"
+                >Link</a
+              >
+              (Accessed 07/02/25)
+            </li>
+            <li>
+              Lehmann-Grube, S. K., Tobisch, A., & Dresel, M. (2024). Changing
+              preservice teacher students’ stereotypes and attitudes and
+              reducing judgment biases concerning students of different family
+              backgrounds: Effects of a short intervention. Social Psychology of
+              Education, 27(4), 1-38.
+            </li>
+            <li>
+              Newton, A. (2024). Active listening for effective student
+              engagement. Journal of Learning Development in Higher Education,
+              (32).
+            </li>
+            <li>
+              Nicolas P. Simon, Rick Hornung, KimberlyB. Dugan (2021), “Summer
+              Bridge Program: Helping Underserved Students Develop Social and
+              Cultural Capital”. Volume 11, Issue 1(2021), pp. 126-148Journal of
+              Interdisciplinary Studies in Education
+              <a href="https://ojed.org/jise/article/view/3458/1849">Link</a>
+            </li>
+            <li>
+              Dweck, C. S., Walton, G. M., & Cohen, G. L. (2014). Academic
+              tenacity: Mindsets and skills that promote long-term learning.
+              Bill & Melinda Gates Foundation.
+              <a
+                href="https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf"
+                >Link</a
+              >
+            </li>
+            <li>
+              Farrington, C. A., Roderick, M., Allensworth, E., Nagaoka, J.,
+              Seneca Keyes, T., Johnson, D. W., & Beechum, N. O. (2012).
+              Teaching adolescents to become learners: The role of noncognitive
+              factors in academic performance. A critical literature review.
+              Consortium on Chicago School Research.
+              <a href="http://eric.ed.gov/?id=ED542543">Link</a>
+            </li>
+            <li>
+              Putnam, R. (2000). Bowling Alone: The Collapse and Revival of
+              American Community. Simon & Schuster Paperbacks
+            </li>
+            <li>
+              Thomas, L. (2012). Building student engagement and belonging in
+              Higher Education at a time of change. Paul Hamlyn Foundation,
+              100(1-99), pp. 1-102.
+            </li>
+            <li>
+              University of Plymouth (No date). Personal tutoring in developing
+              employability. A vital role in supporting student employability
+              skills. Available at:
+              <a
+                href="https://www.plymouth.ac.uk/about-us/teaching-and-learning/employability-in-the-curriculum-and-beyond/personal-tutoring-in-developing-employability"
+                >Link</a
+              >
+              (Accessed 07/02/25)
+            </li>
+            <li>
+              Yosso, T. J. (2005). Whose culture has capital? A critical race
+              theory discussion of community cultural wealth. Race ethnicity and
+              education, 8(1), pp. 69-91.
+            </li>
+            <li>
+              Luthar, S. S., Crossman, E. J., & Small, P. J. (2015). Resilience
+              and adversity. In R.M. Lerner & M. E. Lamb (Eds.), Handbook of
+              Child Psychology and Developmental Science (7th Edition, Vol. III,
+              pp. 247-286). Wiley
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer>
-                    <span class="credits">
-          Based on an <a href="https://github.com/cpitclaudel/academic-poster-template">open poster template</a>.
-        </span>
-          </footer>
+    <!-- <footer>
+      <span class="credits">
+        Based on an
+        <a href="https://github.com/cpitclaudel/academic-poster-template"
+          >open poster template</a
+        >.
+      </span>
+    </footer> -->
   </body>
 </html>
