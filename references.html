@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-6 shadow-lg rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">Reference List</h1>
+        
+        <input type="text" id="search" placeholder="Search references..." class="w-full p-2 border rounded mb-4">
+        
+        <ul id="reference-list" class="space-y-4">
+            <li class="p-4 bg-gray-50 border rounded" data-category="book">
+                <strong>Smith, J. (2022).</strong> <em>Introduction to Vision Science.</em> Oxford University Press.
+            </li>
+            <li class="p-4 bg-gray-50 border rounded" data-category="article">
+                <strong>Doe, A. & Lee, B. (2021).</strong> "The Role of Contrast Sensitivity in Visual Perception." <em>Journal of Optometry</em>, 45(2), 112-125.
+            </li>
+            <li class="p-4 bg-gray-50 border rounded" data-category="website">
+                <strong>World Health Organization. (2023).</strong> "Global Vision Report." Retrieved from <a href="https://www.who.int" class="text-blue-500 underline">WHO</a>.
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('search').addEventListener('input', function () {
+            let query = this.value.toLowerCase();
+            document.querySelectorAll('#reference-list li').forEach(function (item) {
+                item.style.display = item.textContent.toLowerCase().includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
