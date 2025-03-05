@@ -410,6 +410,48 @@ mjx-container,
   /* Adds space between list items */
 }
 
+.custom-section-insert {
+  background-color: #e0f7fa;  /* Change to a new background color (light cyan) */
+  margin-bottom: 1.5rem;      /* Space between sections */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.custom-section-insert header {
+  background: #2e3436;
+  color: #3efcf6;
+  margin: 0 -0.5rem auto -0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+/* Styling for h2 headers in the sections */
+.custom-section-insert header h3 {
+  font-weight: 500;
+  /* font-size: 1.5rem;          Adjust title size */
+  margin: 0;                  /* Remove default margin */
+}
+
+/* Paragraph styling */
+.custom-section-insert p {
+  font-size: 1rem;            /* Normal font size */
+  line-height: 1.6;           /* Increase line spacing */
+  color: #333333;             /* Dark grey text */
+  margin-top: 1rem;           /* Space above paragraphs */
+}
+
+.custom-section-insert ol, .custom-section-insert ul {
+  /* margin: 1.5rem 0; */
+  padding-left: 2rem; /* Indentation for list items */
+  line-height: 1.50; 
+  /* Increases space between list items */
+}
+
+.custom-section-insert ol li, .custom-section ul li {
+  margin-bottom: 0.5rem; 
+  /* Adds space between list items */
+}
+
 aside {
   position: relative; /* Fixes it at the top of the page */
   top: 0;
@@ -433,18 +475,62 @@ nav ul {
 }
 
 nav ul li {
-  margin-bottom: 0px; /* Adds space between each list item */
+  margin-bottom: 4px; /* Adds space between each list item */
 }
 
 nav ul li a {
-  text-decoration: none; /* Removes underline */
-  color: #333; /* Dark color for readability */
-  font-size: 14px; /* Smaller text size */
-  /* padding: 5px 0; Adds vertical padding */
   display: block; /* Ensures the link takes the full width for easy clicking */
 }
+  /* text-decoration: none; Removes underline */
+  /* color: #333; /* Dark color for readability */
+  /* font-size: 14px; Smaller text size */ 
+  /* padding: 5px 0; Adds vertical padding */
 
-nav ul li a:hover {
-  background-color: #f77b7b; /* Light highlight on hover */
-  border-radius: 5px; /* Rounded corners for the hover effect */
+/* nav ul li a:hover {
+  /* background-color: #f77b7b; Light highlight on hover */
+  /* border-radius: 5px; Rounded corners for the hover effect */
+/*} */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: baseline;
+  line-height: 1.15;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: center;
+}
+
+tfoot td {
+  font-weight: bold;
 }

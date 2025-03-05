@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>External Links</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        aside {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-        }
-        h3 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #0073e6;
-            display: inline-block;
-            padding: 5px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        p {
-            font-size: 14px;
-            color: #555;
-            margin: 5px 0 0 10px;
-        }
-    </style>
-</head>
-<body>
-    <aside>
-        <h3>External Links</h3>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://careershub.city.ac.uk/" target="_blank">Careers and employability support</a>
-              <p>Find career advice, job listings, and employability resources.</p>
-            </li>
-            <li>
-              <a href="https://www.city.ac.uk/prospective-students/student-life/student-wellbeing" target="_blank">Student wellbeing support</a>
-              <p>Access mental health and wellbeing services for students.</p>
-            </li>
-            <li>
-              <a href="https://studenthub.city.ac.uk/careers-and-employability/professional-mentoring" target="_blank">Professional Mentoring programme</a>
-              <p>Connect with experienced professionals for guidance and support.</p>
-            </li>
-            <li>
-              <a href="https://buddy.city.ac.uk/apply/" target="_blank">City Buddies, peer mentoring for first year students</a>
-              <p>Get paired with a student mentor to help transition into university life.</p>
-            </li>
-            <li>
-              <a href="https://volunteering.city.ac.uk/" target="_blank">Volunteering opportunities</a>
-              <p>Explore opportunities to give back to the community through volunteering.</p>
-            </li>
-            <li>
-              <a href="https://www.city.ac.uk/prospective-students/student-life/lgbtqplus" target="_blank">LGBTQ+ Societies</a>
-              <p>Join support groups and activities for LGBTQ+ students.</p>
-            </li>
-            <li>
-              <a href="https://www.city.ac.uk/prospective-students/student-life/sports" target="_blank">Sports groups and programmes</a>
-              <p>Participate in sports teams, fitness classes, and wellness programs.</p>
-            </li>
-            <li>
-              <a href="https://www.city.ac.uk/prospective-students/student-life/social" target="_blank">Social activities and groups</a>
-              <p>Engage in student-led events, societies, and networking opportunities.</p>
-            </li>
-          </ul>
-        </nav>
-    </aside>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City St George's Support Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      aside {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      }
+      h3 {
+        color: #333;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #0073e6;
+        display: inline-block;
+        padding: 5px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        font-size: 14px;
+        color: #555;
+        margin: 5px 0 0 10px;
+      }
+    </style> -->
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-6 shadow-lg rounded-lg">
+      <nav
+        class="mb-6 flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 text-center"
+      >
+        <a href="index.html" class="text-blue-500 underline mr-4">Home</a>
+        <a href="poster.html" class="text-blue-500 underline">View Poster</a>
+        <a href="CSG-support-services.html" class="text-blue-500 underline"
+          >City St George's Support Services</a
+        >
+        <a href="references.html" class="text-blue-500 underline">References</a>
+      </nav>
+
+      <h1 class="text-2xl font-bold mb-4">City St George's Support Services</h1>
+      <nav>
+        <ul class="space-y-2">
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://careershub.city.ac.uk/" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc1'); return false;">Careers and employability support</a>
+            <p id="desc1" class="hidden text-gray-600 text-sm">Resources and guidance to help you develop your career and find job opportunities.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://www.city.ac.uk/prospective-students/student-life/student-wellbeing" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc2'); return false;">Student wellbeing support</a>
+            <p id="desc2" class="hidden text-gray-600 text-sm">Support for mental health, counseling, and student welfare services.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://studenthub.city.ac.uk/careers-and-employability/professional-mentoring" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc3'); return false;">Professional Mentoring programme</a>
+            <p id="desc3" class="hidden text-gray-600 text-sm">Connect with experienced professionals to gain career insights and advice.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://buddy.city.ac.uk/apply/" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc4'); return false;">City Buddies, peer mentoring for first year students</a>
+            <p id="desc4" class="hidden text-gray-600 text-sm">Peer mentoring support for first-year students to help them settle into university life.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://volunteering.city.ac.uk/" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc5'); return false;">Volunteering opportunities</a>
+            <p id="desc5" class="hidden text-gray-600 text-sm">Find opportunities to volunteer and contribute to your community.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://www.city.ac.uk/prospective-students/student-life/lgbtqplus" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc6'); return false;">LGBTQ+ Societies</a>
+            <p id="desc6" class="hidden text-gray-600 text-sm">Join LGBTQ+ groups for support, networking, and social events.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://www.city.ac.uk/prospective-students/student-life/sports" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc7'); return false;">Sports groups and programmes</a>
+            <p id="desc7" class="hidden text-gray-600 text-sm">Participate in sports teams, fitness classes, and recreational activities.</p>
+          </li>
+          <li class="p-2 bg-gray-50 border rounded">
+            <a href="https://www.city.ac.uk/prospective-students/student-life/social" target="_blank" class="text-blue-600 hover:underline" onclick="toggleDescription('desc8'); return false;">Social activities and groups</a>
+            <p id="desc8" class="hidden text-gray-600 text-sm">Engage in student-led social events and clubs to meet new people.</p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>

@@ -1,37 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>References</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-gray-100 p-6">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
     <div class="max-w-4xl mx-auto bg-white p-6 shadow-lg rounded-lg">
-        <h1 class="text-2xl font-bold mb-4">Reference List</h1>
-        
-        <input type="text" id="search" placeholder="Search references..." class="w-full p-2 border rounded mb-4">
-        
-        <ul id="reference-list" class="space-y-4">
-            <li class="p-4 bg-gray-50 border rounded" data-category="book">
-                <strong>Smith, J. (2022).</strong> <em>Introduction to Vision Science.</em> Oxford University Press.
-            </li>
-            <li class="p-4 bg-gray-50 border rounded" data-category="article">
-                <strong>Doe, A. & Lee, B. (2021).</strong> "The Role of Contrast Sensitivity in Visual Perception." <em>Journal of Optometry</em>, 45(2), 112-125.
-            </li>
-            <li class="p-4 bg-gray-50 border rounded" data-category="website">
-                <strong>World Health Organization. (2023).</strong> "Global Vision Report." Retrieved from <a href="https://www.who.int" class="text-blue-500 underline">WHO</a>.
-            </li>
-        </ul>
+      <nav
+        class="mb-6 flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 text-center"
+      >
+        <a href="index.html" class="text-blue-500 underline mr-4">Home</a>
+        <a href="poster.html" class="text-blue-500 underline">View Poster</a>
+        <a href="CSG-support-services.html" class="text-blue-500 underline"
+          >City St George's Support Services</a
+        >
+        <a href="references.html" class="text-blue-500 underline">References</a>
+      </nav>
+
+      <h1 class="text-2xl font-bold mb-4">Reference List</h1>
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Search references..."
+        class="w-full p-2 border rounded mb-4"
+      />
+
+      <h2 class="text-xl font-semibold mt-4">Sources:</h2>
+      <ul id="sources-list" class="space-y-4">
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Bourdieu, P. (1984).</strong>
+          <em>Distinction: A social critique of the judgement of taste.</em>
+          Translated by R. Nice. Cambridge: Harvard University Press. Available
+          at
+          <a
+            href="https://monoskop.org/images/e/e0/Pierre_Bourdieu_Distinction_A_Social_Critique_of_the_Judgement_of_Taste_1984.pdf"
+            class="text-blue-500 underline"
+            >Monoskop</a
+          >
+          (Accessed: 7 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Davies, S. and Rizk, J. (2018).</strong> 'The three
+          generations of cultural capital research: A narrative review.'
+          <em>Review of Educational Research</em>, 88(3), pp. 331-365. Available
+          at
+          <a
+            href="http://www.jstor.org/stable/45217766"
+            class="text-blue-500 underline"
+            >JSTOR</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>Dweck, C. S., Walton, G. M. and Cohen, G. L. (2014).</strong>
+          <em
+            >Academic tenacity: Mindsets and skills that promote long-term
+            learning.</em
+          >
+          Bill & Melinda Gates Foundation. Available at
+          <a
+            href="https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf"
+            class="text-blue-500 underline"
+            >Stanford</a
+          >
+          (Accessed: 26 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>Inclusion group wheelchair (2020).</strong> Pixabay. Available
+          at
+          <a
+            href="https://pixabay.com/illustrations/inclusion-group-wheelchair-5249903/"
+            class="text-blue-500 underline"
+            >Pixabay</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="report">
+          <strong>Farrington, C. A. et al. (2012).</strong>
+          <em
+            >Teaching adolescents to become learners: The role of noncognitive
+            factors in academic performance. A critical literature review.</em
+          >
+          Consortium on Chicago School Research. Available at
+          <a
+            href="http://eric.ed.gov/?id=ED542543"
+            class="text-blue-500 underline"
+            >ERIC</a
+          >
+          (Accessed: 26 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Fukuyama, F. (1995).</strong>
+          <em>Trust: The social values and the creation of prosperity.</em> New
+          York: Free Press.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Gaddis, S. M. (2013).</strong> 'The influence of habitus in
+          the relationship between cultural capital and academic achievement.'
+          <em>Social Science Research</em>, 42(1), pp. 1-13. Available at
+          <a
+            href="https://doi.org/10.1016/j.ssresearch.2012.08.002"
+            class="text-blue-500 underline"
+            >ELSEVIER</a
+          >
+          (Accessed: 25 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Griffiths, K. (2005).</strong> 'Personal coaching: A model for
+          effective learning.' <em>Journal of Learning Design</em>, 1(2), pp.
+          55-65.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="report">
+          <strong>Higher Education Academy (HEA) (2013).</strong>
+          <em
+            >Personal tutoring and key skills development in higher education -
+            experiences and challenges.</em
+          >
+          Available at
+          <a
+            href="https://s3.eu-west-2.amazonaws.com/assets.creode.advancehe-document-manager/documents/hea/private/gen_056_0_1568037085.pdf"
+            class="text-blue-500 underline"
+            >HEA</a
+          >
+          (Accessed: 7 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Hockings, C., Cooke, S. and Bowl, M. (2007).</strong>
+          '“Academic engagement” within a widening participation context—a 3D
+          analysis.' <em>Teaching in Higher Education</em>, 12(5-6), pp.
+          721-733. Available at
+          <a
+            href="https://doi.org/10.1080/13562510701596323"
+            class="text-blue-500 underline"
+            >Taylor & Francis Online</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong
+            >Lehmann-Grube, S. K., Tobisch, A. and Dresel, M. (2024).</strong
+          >
+          'Changing preservice teacher students' stereotypes and attitudes and
+          reducing judgment biases concerning students of different family
+          backgrounds: Effects of a short intervention.'
+          <em>Social Psychology of Education</em>, 27(4), pp. 1-38.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Lochtie, D. et al. (2018).</strong>
+          <em>Effective personal tutoring in higher education.</em> St Albans:
+          Critical Publishing Ltd.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong
+            >Luthar, S. S., Crossman, E. J. and Small, P. J. (2015).</strong
+          >
+          'Resilience and adversity,' in Lerner, R. M. & Lamb, M. E. (eds.)
+          <em>Handbook of child psychology and developmental science.</em> 7th
+          edn. Vol. III. Hoboken: Wiley, pp. 247-286.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Newton, A. (2024).</strong> 'Active listening for effective
+          student engagement.'
+          <em>Journal of Learning Development in Higher Education</em>, (32).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>Pun, K. (2016).</strong> 'Dos and don'ts on designing for
+          accessibility - Accessibility in government.' <em>Blog.gov.uk</em>.
+          Available at
+          <a
+            href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/"
+            class="text-blue-500 underline"
+            >Blog.gov.uk</a
+          >
+          (Accessed: 26 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Putnam, R. (2000).</strong>
+          <em
+            >Bowling alone: The collapse and revival of American community.</em
+          >
+          New York: Simon & Schuster Paperbacks.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>Rees, J. (2024).</strong> 'Ofsted's definition of “cultural
+          capital”: A comprehensive guide.' <em>National College.</em> Available
+          at
+          <a
+            href="https://nationalcollege.com/news/ofsted-cultural-capital-guide"
+            class="text-blue-500 underline"
+            >National College</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Smith, E. (2012).</strong>
+          <em>Key issues in education and social justice.</em> Thousand Oaks:
+          SAGE.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="report">
+          <strong>Thomas, L. (2012).</strong>
+          <em
+            >Building student engagement and belonging in higher education at a
+            time of change.</em
+          >
+          Paul Hamlyn Foundation, 100(1), pp. 1-102.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Tramonte, L. and Willms, J.D. (2010).</strong> 'Cultural
+          capital and its effects on education outcomes.'
+          <em>Economics of Education Review</em>, 29(2), pp. 200-213.
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>University of Plymouth (no date).</strong>
+          <em
+            >Personal tutoring in developing employability: A vital role in
+            supporting student employability skills.</em
+          >
+          Available at
+          <a
+            href="https://www.plymouth.ac.uk/about-us/teaching-and-learning/employability-in-the-curriculum-and-beyond/personal-tutoring-in-developing-employability"
+            class="text-blue-500 underline"
+            >Plymouth</a
+          >
+          (Accessed: 7 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Yosso, T. J. (2005).</strong> 'Whose culture has capital? A
+          critical race theory discussion of community cultural wealth.'
+          <em>Race Ethnicity and Education</em>, 8(1), pp. 69-91.
+        </li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-6">Additional Reading:</h2>
+      <ul id="additional-reading-list" class="space-y-4">
+        <li class="p-4 bg-gray-50 border rounded" data-category="book">
+          <strong>Bourdieu, P. (2011).</strong>
+          'The forms of capital', in
+          <em>The sociology of economic life</em> 3rd edn. Routledge. Available
+          at
+          <a
+            href="https://www.taylorfrancis.com/chapters/edit/10.4324/9780429494338-6/forms-capital-pierre-bourdieu"
+            class="text-blue-500 underline"
+            >Taylor & Francis</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Czerniewicz, L. and Brown, C. (2012).</strong> 'Objectified
+          cultural capital and the tale of two students.' Available at
+          <a
+            href="https://doi.org/10.1007/978-1-4614-0496-5_12"
+            class="text-blue-500 underline"
+            >Springer</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="article">
+          <strong>Nicolas, P. S., Hornung, R. and Dugan, K. B. (2021)</strong>
+          'Summer bridge program: Helping underserved students develop social
+          and cultural capital',
+          <em>Journal of Interdisciplinary Studies in Education</em>, 11(1), pp.
+          126-148. Available at
+          <a
+            href="https://ojed.org/jise/article/view/3458/1849"
+            class="text-blue-500 underline"
+            >OJED</a
+          >
+          (Accessed: 26 February 2025).
+        </li>
+        <li class="p-4 bg-gray-50 border rounded" data-category="website">
+          <strong>Todman, V. (2018)</strong> 'The importance of social capital -
+          Behavioural insights in higher education.' Available at
+          <a
+            href="https://blogs.kcl.ac.uk/behaviouralinsights/2018/12/10/the-importance-of-social-capital/"
+            class="text-blue-500 underline"
+            >King's College London</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+        <li
+          class="p-4 bg-gray-50 border rounded"
+          data-category="conference-paper"
+        >
+          <strong>Xu, Y. and Xu, L. (2016).</strong> 'Cultural capital theory
+          and college students' cultural competitiveness', in
+          <em
+            >Proceedings of the 2015 International Conference on Management
+            Science and Engineering (MSE 2015)</em
+          >, Atlantis Press, pp. 67-72. Available at
+          <a
+            href="https://doi.org/10.2991/mse-15.2016.13"
+            class="text-blue-500 underline"
+            >Atlantis Press</a
+          >
+          (Accessed: 27 February 2025).
+        </li>
+      </ul>
     </div>
 
     <script>
-        document.getElementById('search').addEventListener('input', function () {
-            let query = this.value.toLowerCase();
-            document.querySelectorAll('#reference-list li').forEach(function (item) {
-                item.style.display = item.textContent.toLowerCase().includes(query) ? '' : 'none';
-            });
+      document.getElementById("search").addEventListener("input", function () {
+        let query = this.value.toLowerCase();
+        document.querySelectorAll("ul li").forEach(function (item) {
+          item.style.display = item.textContent.toLowerCase().includes(query)
+            ? ""
+            : "none";
         });
+      });
     </script>
-</body>
+  </body>
 </html>
