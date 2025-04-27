@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ' Using Cultural Capital to Maximise Student Potential A Guide for Personal Tutors'
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Benjamin
+    family-names: Evans
+    orcid: 'https://orcid.org/0000-0001-6611-4500'
+    email: Benjamin.Evans.2@citystgeorges.ac.uk
+    affiliation: 'City St George''s, University of London'
+  - given-names: Naba
+    family-names: Elsaid
+    affiliation: 'City St George''s, University of London'
+  - given-names: Roma
+    family-names: Ivanauskaite
+    affiliation: 'City St George''s, University of London'
+  - given-names: Fred
+    family-names: Scott
+    affiliation: 'City St George''s, University of London'
+  - given-names: Paul
+    family-names: Sutton Reeves
+    affiliation: 'City St George''s, University of London'
+repository-code: 'https://3enji.github.io/CSG_edu_EDM118_poster/poster.html'
+license: MIT
