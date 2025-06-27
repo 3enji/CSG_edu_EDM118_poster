@@ -43,13 +43,28 @@ b {
   body > header {
     grid-template-columns: auto 1fr auto;
   }
-  main {
+  /* main {
     align-content: flex-start;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow: auto;
     padding: 0.5rem;
+  } */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 80vh; /* or any height constraint */
+    padding: 1rem;
+    gap: 1rem;
+    height: 100%;
+    min-height: 0;
+    /* below for snapping */
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 1rem 0 1rem;
   }
   main::after {
     content: " ";
@@ -57,13 +72,20 @@ b {
     flex-basis: 100%;
     width: 0.5rem;
   }
-  main > * {
+  /* main > * {
     flex-grow: 1;
     margin: 0.5rem;
     max-width: 30rem;
     min-width: 22.5rem;
     width: 24%;
     width: calc(100% / 4 - 1rem);
+  } */
+  main > * {
+    flex: 0 0 25rem; /* Fixed width per column */
+    /* max-height: 100%; */
+    overflow-y: auto;
+    box-sizing: border-box;
+    scroll-snap-align: start;
   }
 }
 @media not all and (min-width: 60rem) {
@@ -89,7 +111,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif;
+  font-family: "Fira Sans Condensed", "Fira Sans", sans-serif;
   margin: 0;
 }
 body > header,
@@ -356,11 +378,11 @@ mjx-container,
 
 /* Style for all sections with class 'custom-section' */
 .custom-section {
-  background-color: #f4f4f4;  /* Light grey background */
+  background-color: #f4f4f4; /* Light grey background */
   /* padding: 1.5rem;            Add padding inside the section */
-  margin-bottom: 1.5rem;      /* Space between sections */
-  border-radius: 8px;         /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  margin-bottom: 1.5rem; /* Space between sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 0.3s ease; /* Smooth background transition */
   padding: 0 0.5rem 0.5rem 0.5rem;
 }
@@ -369,6 +391,8 @@ mjx-container,
 .custom-section header {
   background: #2e3436;
   color: #fcaf3e;
+  background: #d61529;
+  color: #ffffff;
   margin: 0 -0.5rem auto -0.5rem;
   padding: 0.25rem 0.5rem;
 }
@@ -377,20 +401,20 @@ mjx-container,
 .custom-section header h3 {
   font-weight: 500;
   /* font-size: 1.5rem;          Adjust title size */
-  margin: 0;                  /* Remove default margin */
+  margin: 0; /* Remove default margin */
 }
 
 /* Paragraph styling */
 .custom-section p {
-  font-size: 1rem;            /* Normal font size */
-  line-height: 1.6;           /* Increase line spacing */
-  color: #333333;             /* Dark grey text */
-  margin-top: 1rem;           /* Space above paragraphs */
+  font-size: 1rem; /* Normal font size */
+  line-height: 1.6; /* Increase line spacing */
+  color: #333333; /* Dark grey text */
+  margin-top: 1rem; /* Space above paragraphs */
 }
 
 /* Add hover effect for sections */
 .custom-section:hover {
-  background-color: #e0e0e0;  /* Change background on hover */
+  background-color: #e0e0e0; /* Change background on hover */
 }
 
 /* Add spacing between each section */
@@ -398,23 +422,25 @@ mjx-container,
   /* margin-top: 2rem; */
 }
 
-.custom-section ol, .custom-section ul {
+.custom-section ol,
+.custom-section ul {
   /* margin: 1.5rem 0; */
   padding-left: 2rem; /* Indentation for list items */
-  line-height: 1.50; 
+  line-height: 1.5;
   /* Increases space between list items */
 }
 
-.custom-section ol li, .custom-section ul li {
-  margin-bottom: 0.5rem; 
+.custom-section ol li,
+.custom-section ul li {
+  margin-bottom: 0.5rem;
   /* Adds space between list items */
 }
 
 .custom-section-insert {
-  background-color: #e0f7fa;  /* Change to a new background color (light cyan) */
-  margin-bottom: 1.5rem;      /* Space between sections */
-  border-radius: 8px;         /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  background-color: #e0f7fa; /* Change to a new background color (light cyan) */
+  margin-bottom: 1.5rem; /* Space between sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 0.3s ease; /* Smooth background transition */
   padding: 0 0.5rem 0.5rem 0.5rem;
 }
@@ -429,26 +455,28 @@ mjx-container,
 .custom-section-insert header h3 {
   font-weight: 500;
   /* font-size: 1.5rem;          Adjust title size */
-  margin: 0;                  /* Remove default margin */
+  margin: 0; /* Remove default margin */
 }
 
 /* Paragraph styling */
 .custom-section-insert p {
-  font-size: 1rem;            /* Normal font size */
-  line-height: 1.6;           /* Increase line spacing */
-  color: #333333;             /* Dark grey text */
-  margin-top: 1rem;           /* Space above paragraphs */
+  font-size: 1rem; /* Normal font size */
+  line-height: 1.6; /* Increase line spacing */
+  color: #333333; /* Dark grey text */
+  margin-top: 1rem; /* Space above paragraphs */
 }
 
-.custom-section-insert ol, .custom-section-insert ul {
+.custom-section-insert ol,
+.custom-section-insert ul {
   /* margin: 1.5rem 0; */
   padding-left: 2rem; /* Indentation for list items */
-  line-height: 1.50; 
+  line-height: 1.5;
   /* Increases space between list items */
 }
 
-.custom-section-insert ol li, .custom-section ul li {
-  margin-bottom: 0.5rem; 
+.custom-section-insert ol li,
+.custom-section ul li {
+  margin-bottom: 0.5rem;
   /* Adds space between list items */
 }
 
@@ -481,14 +509,14 @@ nav ul li {
 nav ul li a {
   display: block; /* Ensures the link takes the full width for easy clicking */
 }
-  /* text-decoration: none; Removes underline */
-  /* color: #333; /* Dark color for readability */
-  /* font-size: 14px; Smaller text size */ 
-  /* padding: 5px 0; Adds vertical padding */
+/* text-decoration: none; Removes underline */
+/* color: #333; /* Dark color for readability */
+/* font-size: 14px; Smaller text size */
+/* padding: 5px 0; Adds vertical padding */
 
 /* nav ul li a:hover {
   /* background-color: #f77b7b; Light highlight on hover */
-  /* border-radius: 5px; Rounded corners for the hover effect */
+/* border-radius: 5px; Rounded corners for the hover effect */
 /*} */
 
 table {
@@ -534,3 +562,71 @@ tfoot th {
 tfoot td {
   font-weight: bold;
 }
+
+.shaded-box {
+  background-color: #ffefed;
+  padding: 0em 0.5em 0em 0.5em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+table.shaded {
+  border-collapse: collapse;
+  width: 100%;
+  /* font-family: sans-serif; */
+  /* font-size: 0.95rem; */
+}
+
+table.shaded th,
+table.shaded td {
+  border: 1px solid #ccc;
+  padding: 0.75em;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.shaded tbody tr:nth-child(even) {
+  background-color: #caeefb;
+}
+
+table.shaded thead th {
+  background-color: #caeefb;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* .scroll-column {
+  position: relative;
+  flex: 0 0 25rem;        
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.scroll-column > section {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-bottom: 2rem;  
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: #999;
+  animation: bounce 1.5s infinite;
+  pointer-events: none;
+  display: none;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+ */
