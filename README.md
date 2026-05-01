@@ -5,6 +5,8 @@ Student Potential: A Guide for Personal Tutors." It aims to provide insights
 into cultural capital and its relevance in higher education, particularly for
 personal tutors.
 
+A html version of the poster is available to view via: https://3enji.github.io/CSG_edu_EDM118_poster/poster.html
+
 ## Information
 
 This project is based on a poster template from
